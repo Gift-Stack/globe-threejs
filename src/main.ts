@@ -71,6 +71,7 @@ let starColor = window.matchMedia?.("(prefers-color-scheme: dark)").matches
   ? 0xffffff
   : 0x000;
 
+// Watch out for system theme changes
 window
   .matchMedia?.("(prefers-color-scheme: dark)")
   ?.addEventListener("change", (event) => {
